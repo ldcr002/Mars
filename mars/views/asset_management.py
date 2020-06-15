@@ -187,7 +187,7 @@ def new_asset():
                     'task_state':'new',
                     'domain_fast_port_scan':domain_fast_port_scan,
                     'asset_scan_zhouqi':asset_scan_zhouqi,
-                    'c_scan':c_scan,
+                    'c_scan':'false',
                     'c_fast_port_scan':c_fast_port_scan,
 
                 }

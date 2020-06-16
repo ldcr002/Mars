@@ -15,7 +15,7 @@ from mars.views.authenticate import login_check
 
 
 poc_scanner = Blueprint('poc_scanner', __name__)
-tasks_db = db_name_conf()['tasks_db']
+tasks_db = db_name_conf()['tasks_db']   #任务数据库
 asset_db = db_name_conf()['asset_db']
 server_db = db_name_conf()['server_db']
 subdomain_db = db_name_conf()['subdomain_db']

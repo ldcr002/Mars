@@ -172,10 +172,10 @@ def new_asset():
                         new_task[task_main_domain]=[]
                         new_task[task_main_domain].append(asset_task)
 
-            # print "new_task",new_task
+            print "new_task",new_task
 
             for new_task_name in new_task:
-                # print new_task[new_task_name]
+                print new_task[new_task_name]
                 asset_data = {
                     'asset_name': new_task_name,
                     'asset_host': new_task[new_task_name],
@@ -191,11 +191,11 @@ def new_asset():
                     'c_fast_port_scan':c_fast_port_scan,
 
                 }
-                # print "new_task_name",asset_data
+                print "new_task_name",asset_data
 
                 # # asset_id = 1
                 existe_cus_datas = connectiondb(asset_db).find_one({'asset_name':asset_data['asset_name']})
-                # print "existe_cus_datas",existe_cus_datas
+                print "existe_cus_datas",existe_cus_datas
                 if not existe_cus_datas:
                     asset_id = connectiondb(asset_db).insert_one(asset_data).inserted_id
                     if asset_id:

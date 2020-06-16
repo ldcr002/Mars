@@ -27,10 +27,10 @@ class Config:
 
 class ProductionConfig(Config):
     DB_HOST = '127.0.0.1'  # MongoDB Host
-    DB_PORT = 27017  # MongoDB Port (int)
+    DB_PORT = 65521  # MongoDB Port (int)
     DB_NAME = 'mars'  # MongoDB Name
-    DB_USERNAME = 'mars'  # MongoDB User
-    DB_PASSWORD = 'tidesec.com'  # MongoDB Password
+    DB_USERNAME = 'scan'  # MongoDB User
+    DB_PASSWORD = 'WWW.nihao.COM'  # MongoDB Password
     CONFIG_NAME = 'mars'  # Scanner config name
     PLUGIN_DB = 'dev_plugin_info'  # Plugin collection
     TASKS_DB = 'dev_tasks'  # Scan tasks collection

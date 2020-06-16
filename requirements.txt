@@ -12,3 +12,5 @@ python-nmap
 flask
 bs4
 qqwry
+apscheduler
+ipaddr
